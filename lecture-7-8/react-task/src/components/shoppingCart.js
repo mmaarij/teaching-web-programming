@@ -1,9 +1,9 @@
 export const ShoppingCart = () => {
 
     const cartList = [
-        {"productName": "Product name", "description": "Brief description", "amount": "$12"},
-        {"productName": "Second product", "description": "Brief description", "amount": "$8"},
-        {"productName": "Promo code", "description": "EXAMPLECODE", "amount": "-$5"},
+        {"productName": "Jewels From India", "description": "'Gift' From The Mughals", "amount": "$12"},
+        {"productName": "Egyptian Mummies", "description": "Perfect For Our Museums", "amount": "$8"},
+        {"productName": "Promo Code", "description": "COLONIALISM", "amount": "-$500"},
     ]
     return (
         <div>
@@ -15,7 +15,7 @@ export const ShoppingCart = () => {
                 {cartList.map(cartE => (<CartElement cart={cartE} /> ))}
                 <li class="list-group-item d-flex justify-content-between">
                     <span>Total (USD)</span>
-                    <strong>$15</strong>
+                    <strong>$FREE</strong>
                 </li>
             </ul>
         </div>

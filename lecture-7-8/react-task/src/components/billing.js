@@ -6,11 +6,11 @@ const BillingForm = () => {
                 <div class="row">
                 <div class="col-md-6 mb-3">
                     <label for="firstName">First name</label>
-                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required/>
+                    <input type="text" class="form-control" id="firstName" placeholder="Queen" value="" required/>
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="lastName">Last name</label>
-                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required/>
+                    <input type="text" class="form-control" id="lastName" placeholder="Elizabeth" value="" required/>
                 </div>
                 </div>
 
@@ -31,7 +31,7 @@ const BillingForm = () => {
 
                 <div class="mb-3">
                 <label for="address">Address</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required/>
+                <input type="text" class="form-control" id="address" placeholder="Buckingham Palace" required/>
                 </div>
 
                 <div class="mb-3">
@@ -45,6 +45,8 @@ const BillingForm = () => {
                     <select class="custom-select d-block w-100" id="country" required>
                     <option value="">Choose...</option>
                     <option>United States</option>
+                    <option>Pakistan</option>
+                    <option>Kill Me Instead</option>
                     </select>
                     <div class="invalid-feedback">
                     Please select a valid country.
