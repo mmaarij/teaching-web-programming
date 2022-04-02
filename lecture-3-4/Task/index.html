@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Checkout</title>
+</head>
+
+<body>
+    <h2>Enter Billing Address</h2>
+    <form>
+        <div>
+            <div>
+                <label>First name</label>
+                <input type="text" id="firstName" placeholder="" value="" required="">
+
+                <label>Last name</label>
+                <input type="text" id="lastName" placeholder="" value="" required="">
+            </div>
+
+            <br />
+
+            <div>
+                <label>Username</label>
+                <div>
+                    <span>@</span>
+                    <input type="text" id="username" placeholder="Username" required="">
+                </div>
+            </div>
+
+            <br />
+
+            <div>
+                <label>Email<span style="color:gray"> (Optional)</span></label>
+                <div>
+                    <input type="email" id="email" placeholder="you@example.com">
+                </div>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="address">Address</label>
+                <div>
+                    <input type="text" id="address" placeholder="1234 Main St" required="">
+                </div>
+            </div>
+
+            <br />
+
+            <div>
+                <label for="address">Address 2<span style="color:gray"> (Optional)</span></label>
+                <div>
+                    <input type="text" id="address" placeholder="Apartment or Suite" required="">
+                </div>
+            </div>
+
+
+            <br />
+
+            <div>
+                <label for="country">Country</label>
+                <select id="country" required="">
+                    <option value="">Choose...</option>
+                    <option>Pakistan</option>
+                    <option>Canada</option>
+                </select>
+
+
+                <label for="state">State</label>
+                <select id="state" required="">
+                    <option value="">Choose...</option>
+                    <option>California</option>
+                    <option>Idaho</option>
+                </select>
+
+
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" placeholder="" required="">
+            </div>
+
+            <br />
+
+        </div>
+
+        <hr>
+
+        <div>
+            <input type="checkbox" id="same-address">
+            <label for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+
+        <div class="form-check">
+            <input type="checkbox" id="save-info">
+            <label for="save-info">Save this information for next time</label>
+        </div>
+
+        <hr>
+
+        <!--done till here-->
+        <br /> <button type="submit">Continue to checkout</button>
+    </form>
+
+</body>
+
+
+</html>
+
+<!--
+
+    Web Programming 6A
+    Task Done By
+    Muhammad Maarij 19L-2347
+    Raad Raza 19L-0943
+
+-->

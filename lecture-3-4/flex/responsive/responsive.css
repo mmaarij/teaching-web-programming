@@ -4,7 +4,10 @@
 }
 
 /* Responsive layout - makes a one column layout instead of a two-column layout */
+/* media queries */
+/* max width checks screen width and runs inside css if true */
 @media (max-width: 800px) {
+    /* if width crosses 800 then this code will stop running and flex will shift from coloumn to row */
     .flex-container {
         flex-direction: column;
     }
