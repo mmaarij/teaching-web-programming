@@ -17,8 +17,10 @@ import React, {Component} from 'react';
 const Story = (props) => {
     return (
         <main role="main" class="container">
-            <h1 class="mt-5">{props.story.title}</h1>
-            <p class="lead">{props.story?.intro}</p>
+            <h1 class="mt-5">{props.storyThis.title}</h1>
+            <p class="lead">{props.storyThis?.intro}</p>
+            {/* the ? with story?.intro indicates that intro will 
+            only be accessed if a story object exists */}
             <a href="some_link">Load more</a>
         </main>
     )

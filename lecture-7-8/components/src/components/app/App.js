@@ -10,3 +10,7 @@ function App() {
 }
 
 export default App;
+
+// function needs to return atleast 1 div
+// methods in CamelCase
+// var names in snakeCase
