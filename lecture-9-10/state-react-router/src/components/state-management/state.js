@@ -2,6 +2,11 @@ import React, { useState, Component } from 'react';
 
 export const StateMethod = () => {
     const [count, setCount] = useState(0);
+    // line above implements this kind of function below
+    // count = 0
+    // int setCount(a) {
+    //   count = a
+    // }
     return (
       <div>
         <h2>Using the State Hook</h2>
@@ -44,7 +49,8 @@ export class StateClass extends Component {
         return (
           <div>
             <h2>Using the Class State</h2>
-            <p>You reported {this.state.count} times</p>
+            {/* render variable using {} */}
+            <p>You reported {this.state.count} times</p>   
             <button onClick={this.report}>
               Report post
             </button>

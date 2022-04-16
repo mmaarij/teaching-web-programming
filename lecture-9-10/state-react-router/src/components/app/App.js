@@ -1,6 +1,7 @@
 import './App.css';
 import { StateMethod, StateClass } from "../state-management/state"
 import WeatherForecast from "../api/WeatherForecast"
+import GitUserData from "../api/testAPI"
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,7 +32,7 @@ const App = () => {
           </nav>
           <Switch>
             <Route path="/api">
-              <WeatherForecast />
+              <GitUserData />
             </Route>
             <Route path="/">
               <div>
