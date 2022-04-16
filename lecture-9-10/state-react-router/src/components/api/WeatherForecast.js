@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import { weatherAPI } from "./apis"
 import axios from 'axios'
 
-
 const dayOfWeek = (dayIndex) => {
     switch (dayIndex) {
       case "1": return "Tomorrow"
@@ -11,7 +10,7 @@ const dayOfWeek = (dayIndex) => {
       default: return "Today"
     }
 }
-
+// *****************************************************************
 const Forecast = (props) => {
     return (
         <div key={props.forecast.day}>
@@ -21,17 +20,15 @@ const Forecast = (props) => {
         </div>
     )
 }
-
-
+// *****************************************************************
 class WeatherForecast extends Component {
-
     constructor(props) {
         super(props)
         this.state = {
             weatherData: undefined
         }
     }
-
+    
     componentWillMount = () => {
         axios.get(weatherAPI)
         .then(({ data }) => {
@@ -61,5 +58,4 @@ class WeatherForecast extends Component {
         )
     }
 }
-
 export default WeatherForecast
